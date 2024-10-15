@@ -85,62 +85,7 @@ footer {
     }
 }
 
-#members .card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle card shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#members .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger hover shadow */
-}
-
-#members .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #003366;
-}
-
-#members .card-text {
-    font-size: 0.9rem;
-    color: #6c757d;
-}
-
-#members .card-img-top {
-    border: 2px solid #ddd;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Image shadow */
-    border-radius: 50%; /* Circular image */
-}
-
-#members .card-img-top {
-    width: 120px;
-    height: 120px;
-}
-
-#members h2 {
-    color: #003366;
-    font-weight: 700;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    text-align: center; /* Center-align the section heading */
-}
-
-@media (max-width: 768px) {
-    #members h2 {
-        font-size: 2rem;
-    }
-    #members .card-title {
-        font-size: 1rem;
-    }
-    #members .card-img-top {
-        width: 100px;
-        height: 100px;
-    }
-}
-
+ 
 
 /* Functions and Responsibilities Section */
 .section-title {
@@ -349,3 +294,204 @@ footer .text-center {
     font-size: 1rem;
     color: #ccc
 }
+
+
+
+/* About Section Enhancements */
+.about-section {
+    background: linear-gradient(135deg, #f4faff 0%, #e1f5fe 100%);
+    padding: 60px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: background 0.5s ease, transform 0.3s;
+    position: relative;
+}
+
+.about-section:hover {
+    background: linear-gradient(135deg, #e1f5fe 0%, #f4faff 100%);
+    transform: translateY(-5px);
+}
+
+.about-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+
+.about-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #003366;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.about-section h2::after {
+    content: '';
+    width: 70px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.about-section .lead {
+    font-size: 1.3rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.about-section .list-group-item {
+    background: transparent;
+    padding-left: 0;
+}
+
+.about-section .list-group-item i {
+    color: #28a745;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.about-section .list-group-item:hover i {
+    color: #0056b3;
+}
+
+.about-section .btn {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.about-section .btn:hover {
+    background-color: #0056b3;
+}
+
+.about-section .testimonial blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    background-color: #f1f9ff;
+    border-radius: 5px;
+    animation: fadeInUp 1s ease-out 1.2s;
+}
+
+.about-section .testimonial blockquote footer {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 0;
+    }
+
+    .about-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-section .btn {
+        width: 100%;
+    }
+}
+
+
+/* Card Styling for Members Section */
+#members .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#members .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger hover shadow */
+}
+
+/* Card Image Styling */
+#members .card-img-top {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ddd;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Image shadow */
+    transition: all 0.3s ease;
+}
+
+#members .card:hover .card-img-top {
+    transform: scale(1.05); /* Image scaling on hover */
+}
+
+/* Card Body Styling */
+#members .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Card Title Styling */
+#members .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003366;
+    transition: all 0.3s ease;
+}
+
+#members .card:hover .card-title {
+    color: #28a745; /* Title color on hover */
+}
+
+/* Card Text Styling */
+#members .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+#members .card-body .description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* Horizontal Rule Styling */
+#members .card-body hr {
+    width: 40%;
+    border-top: 2px solid #007bff;
+    margin: 15px 0;
+}
+
+
+
+
+
