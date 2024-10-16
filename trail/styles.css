@@ -1,350 +1,4 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
-
-h1, h2 {
-    color: #105eac; /* Dark blue for headers */
-}
-
-.navbar{
-    background-color: #DC3545;
-}
-
- 
-
-.text-center {
-    margin-bottom: 20px;
-}
-
-ul.list-group {
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-/* General Header Section Styling */
-.header-section {
-    background-color: #1E3A5F; /* Deep navy blue for professional contrast */
-    color: #FFCC33; /* Golden text */
-    font-family: 'Montserrat', sans-serif; /* Modern, professional font */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds depth */
-    border-radius: 0 0 10px 10px; /* Rounded bottom for a refined look */
-    padding: 20px 0;
-}
-
-/* Flex container for logo and text */
-.header-section .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Ensures responsiveness */
-    padding: 10px 20px;
-}
-
-/* Left and Right Logos Styling */
-.header-section .logo-left, .header-section .logo-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.header-section .logo {
-    max-height: 100px; /* Consistent logo size for desktop */
-    width: auto;
-    border: 2px solid #FFCC33; /* Gold border around logos */
-    padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for logos */
-    margin: 0 10px; /* Equal margin for consistent spacing */
-}
-
-/* Center Text Styling */
-.header-section .header-text {
-    flex: 2;
-    text-align: center;
-    margin: 0 20px;
-}
-
-/* College Name - Enhanced Styling */
-.header-section .college-name {
-    font-size: 2rem; /* Good size for both desktop and larger mobile devices */
-    font-weight: 600;
-    background: linear-gradient(90deg, #FFCC33 0%, #FFF4CC 100%); /* Subtle golden gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Makes gradient text fill */
-    margin: 0;
-}
-
-/* Tagline Styling */
-.header-section .tagline {
-    font-size: 1rem; /* Base size for readability across devices */
-    font-weight: 300;
-    color: #FFFFFF; /* White for tagline contrast */
-    margin-top: 5px;
-}
-
-/* Media Query for Mobile Responsiveness */
-@media (max-width: 768px) {
-    .header-section .container {
-        flex-direction: column; /* Stack logos and text vertically */
-        text-align: center; /* Center-align text and logos on mobile */
-    }
-
-    .header-section .logo {
-        max-height: 80px; /* Smaller logo size for mobile */
-    }
-
-    .header-section .college-name {
-        font-size: 1.7rem; /* Slightly smaller font for mobile readability */
-    }
-
-    .header-section .tagline {
-        font-size: 0.9rem; /* Adjust tagline size for mobile */
-    }
-}
-
-
-
-/* Announcement Block Styling */
-.announcement-bar {
-    width: 100%;
-    background-color: #FFCC33; /* Bright color to grab attention */
-    color: #1E3A5F; /* Dark navy color for contrast */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-}
-
-/* Moving Text Styling */
-.announcement-text {
-    display: inline-block; /* Keeps the text as a block */
-    white-space: nowrap; /* Prevents the text from wrapping */
-    overflow: hidden; /* Hides any overflow */
-    animation: moveHorizontal 10s linear infinite; /* Call the animation */
-}
-
-/* Keyframes for moving the text horizontally */
-@keyframes moveHorizontal {
-    0% {
-        transform: translateX(100%); /* Start from the right */
-    }
-    100% {
-        transform: translateX(-100%); /* Move to the left */
-    }
-}
-
-/* For mobile responsiveness */
-@media (max-width: 768px) {
-    .announcement-bar {
-        font-size: 0.9rem; /* Slightly smaller text for mobile */
-    }
-}
-
-
-
-/* Adding a light shadow and subtle border for all sections */
-section {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 10px; /* Slight rounding for professional look */
-    padding: 20px;
-    background-color: #fff; /* White background to contrast shadows */
-    margin-bottom: 20px;
-}
-
-footer {
-    margin-top: auto; /* Sticky footer */
-    padding: 20px 0;
-    width: 100%;
-}
-
- 
-
-
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Button shadow */
-    border-radius: 5px; /* Rounded buttons */
-}
-
-.btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    box-shadow: 0 6px 10px rgba(0, 86, 179, 0.4); /* Stronger hover shadow */
-}
-
-#about img {
-    max-width: 100%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on images */
-    border-radius: 8px; /* Rounded image edges */
-}
-
- 
- 
-
-/* Functions and Responsibilities Section */
-.section-title {
-    font-size: 2rem;
-    color: #003366;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-align: center; /* Center-align title */
-    border-bottom: 2px solid #003366; /* Border for emphasis */
-    padding-bottom: 10px;
-}
-
-.card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Soft card shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #f8f9fa;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-.function-card .icon, .responsibility-card .icon {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin-top: 4px;
-}
-
-.function-card p, .responsibility-card p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-}
-
-.function-card:hover .icon, .responsibility-card:hover .icon {
-    color: #0056b3;
-}
-
-.card-body {
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-.ml-3 {
-    margin-left: 1rem;
-}
-
-
-/* Reports Section */
-#reports {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-    border-top: 2px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Section shadow */
-}
-
-#reports h2 {
-    font-size: 2rem;
-    color: #003366;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: center; /* Center-align title */
-}
-
-#reports p {
-    font-size: 1rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-align: center; /* Center-align description */
-}
-
-.report-card-simple {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease;
-    padding: 20px;
-}
-
-.report-card-simple:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-}
-
-.report-card-simple h5 {
-    font-size: 1.25rem;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.report-card-simple p {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-.report-card-simple .btn {
-    font-size: 0.875rem;
-    padding: 8px 16px;
-}
-
-
-/* Feedback Section */
-#feedback {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-    border-top: 2px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Section shadow */
-}
-
-#feedback h2 {
-    font-size: 2rem;
-    color: #003366;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: center; /* Center-align title */
-}
-
-#feedback p {
-    font-size: 1rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-align: center;
-}
-
-.form-group label {
-    font-weight: 500;
-    color: #333;
-    font-size: 1rem;
-}
-
-#feedbackInput {
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    padding: 15px;
-    font-size: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Input field shadow */
-}
-
-#feedback .btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Button shadow */
-}
-
-#feedback .btn-primary:hover {
-    background-color: #0056b3;
-    box-shadow: 0 6px 10px rgba(0, 86, 179, 0.4); /* Stronger hover shadow */
-}
-
-
-/* Footer Styles */
+ /* Footer Styles */
 footer {
     background-color: #003366;
     color: #fff;
@@ -396,7 +50,127 @@ footer .text-center {
 
 
 
-/* About Section Enhancements */
+body {
+    font-family: 'Roboto', sans-serif; /* Gives a clean, modern look */
+    line-height: 1.6; /* Ensures readability */
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    padding-top: 60px;
+}
+ 
+  
+.navbar {
+    background-color: #DC3545;
+}
+
+
+.header-section {
+    background-color: #1E3A5F;
+    color: #FFCC33;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+    padding: 20px 0;
+}
+
+.header-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.header-section .logo-left, .header-section .logo-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-section .logo {
+    max-height: 100px;
+    width: auto;
+    border: 2px solid #FFCC33;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+}
+
+.header-section .header-text {
+    flex: 2;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.header-section .college-name {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #FFCC33 0%, #FFF4CC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.header-section .tagline {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+
+.announcement-bar {
+    width: 100%;
+    background-color: #FFCC33;
+    color: #1E3A5F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moveHorizontal 10s linear infinite;
+}
+
+@keyframes moveHorizontal {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+.announcement-bar {
+    width: 100%;
+    background-color: #FFCC33;
+    color: #1E3A5F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moveHorizontal 10s linear infinite;
+}
+
+@keyframes moveHorizontal {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* About Section */
 .about-section {
     background: linear-gradient(135deg, #f4faff 0%, #e1f5fe 100%);
     padding: 60px 0;
@@ -420,7 +194,7 @@ footer .text-center {
     box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
 }
 
-.about-section h2 {
+.about-section h2, .about-section h3 {
     font-size: 2.8rem;
     font-weight: 700;
     color: #003366;
@@ -429,7 +203,7 @@ footer .text-center {
     text-transform: capitalize;
 }
 
-.about-section h2::after {
+.about-section h2::after, .about-section h3::after {
     content: '';
     width: 70px;
     height: 4px;
@@ -508,7 +282,7 @@ footer .text-center {
         padding: 40px 0;
     }
 
-    .about-section h2 {
+    .about-section h2, .about-section h3 {
         font-size: 2.2rem;
     }
 
@@ -516,81 +290,4 @@ footer .text-center {
         width: 100%;
     }
 }
-
-
-/* Card Styling for Members Section */
-#members .card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle card shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#members .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger hover shadow */
-}
-
-/* Card Image Styling */
-#members .card-img-top {
-    width: 120px;
-    height: 120px;
-    border: 2px solid #ddd;
-    object-fit: cover;
-    border-radius: 50%; /* Circular image */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Image shadow */
-    transition: all 0.3s ease;
-}
-
-#members .card:hover .card-img-top {
-    transform: scale(1.05); /* Image scaling on hover */
-}
-
-/* Card Body Styling */
-#members .card-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-/* Card Title Styling */
-#members .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #003366;
-    transition: all 0.3s ease;
-}
-
-#members .card:hover .card-title {
-    color: #28a745; /* Title color on hover */
-}
-
-/* Card Text Styling */
-#members .card-text {
-    font-size: 0.9rem;
-    color: #6c757d;
-    transition: all 0.3s ease;
-}
-
-#members .card-body .description {
-    font-size: 0.95rem;
-    color: #666;
-    margin-top: 15px;
-    line-height: 1.5;
-}
-
-/* Horizontal Rule Styling */
-#members .card-body hr {
-    width: 40%;
-    border-top: 2px solid #007bff;
-    margin: 15px 0;
-}
-
-
-
-
 
