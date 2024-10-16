@@ -9,7 +9,10 @@ h1, h2 {
 
 .navbar{
     background-color: #DC3545;
-    position : sticky;
+}
+
+nav{
+    position : fixed;
 }
 
 .text-center {
