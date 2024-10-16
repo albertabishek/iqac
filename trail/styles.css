@@ -123,14 +123,15 @@ body {
 
 .announcement-bar {
     width: 100%;
-    background-color: #FFCC33;
-    color: #1E3A5F;
+    background-color: #ffffff;
+    color: #ff1717;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 50px;
 }
 
 .announcement-text {
