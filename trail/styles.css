@@ -1,51 +1,78 @@
- /* Footer Styles */
-footer {
-    background-color: #003366;
-    color: #fff;
-    padding: 60px 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow to separate footer */
+/* Footer Styles */
+.footer {
+    background-color: #131a48; /* Darker background for the footer */
+    color: #ffffff; /* White text */
+    padding: 60px 0; /* Top and bottom padding */
 }
 
-footer h5 {
-    font-size: 1.3rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-    font-weight: 600;
+/* Section Heading Styles */
+.footer h5 {
+    font-size: 1.5rem; /* Slightly larger heading */
+    color: #00BFFF; /* Bright cyan color for headings */
+    margin-bottom: 20px; /* Spacing below the heading */
+    font-weight: 600; /* Semi-bold */
+    border-bottom: 2px solid #00BFFF; /* Cyan border below heading */
+    padding-bottom: 10px; /* Spacing below border */
 }
 
-footer p, footer ul {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #ccc;
+/* Paragraph and List Styles */
+.footer p, .footer ul {
+    font-size: 1rem; /* Regular font size */
+    margin-bottom: 10px; /* Spacing below paragraphs and list items */
+    color: #ccc; /* Light grey text color */
 }
 
-footer a {
-    color: #ffffff;
-    text-decoration: none;
+/* Link Styles */
+.footer a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-footer a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
+.footer a:hover {
+    color: #00BFFF; /* Bright cyan color on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
-footer .social-icons a {
-    font-size: 1.5rem;
-    margin-right: 15px;
-    color: #ffffff;
+/* Social Media Icons */
+.footer .social-icons a {
+    font-size: 1.5rem; /* Size of social icons */
+    margin-right: 15px; /* Spacing between icons */
+    color: #ffffff; /* White color */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-footer .social-icons a:hover {
-    color: #ffcc00;
+.footer .social-icons a:hover {
+    color: #00BFFF; /* Bright cyan color on hover */
+}
+
+/* Divider Line */
+footer hr {
+    border: 0;
+    border-top: 1px solid #555; /* Divider color */
 }
 
 /* Copyright Section */
-footer .text-center {
-    border-top: 1px solid #ffffff;
-    padding-top: 20px;
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #ccc
+.footer .text-center {
+    padding-top: 20px; /* Spacing above copyright */
+    margin-top: 20px; /* Spacing above copyright */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #ccc; /* Light grey color */
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0; /* Less padding on smaller screens */
+    }
+
+    .footer h5 {
+        font-size: 1.2rem; /* Smaller heading for mobile */
+    }
+
+    .footer p, .footer ul {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
 }
 
 
@@ -62,7 +89,7 @@ body {
  
   
 .navbar {
-    background-color: #DC3545;
+    background-color: #ff0055;
 }
 
 
@@ -119,6 +146,7 @@ body {
     color: #FFFFFF;
     margin-top: 5px;
 }
+
 
 
  
