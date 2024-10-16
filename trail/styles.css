@@ -1,3 +1,22 @@
+
+
+/* Adding a light shadow and subtle border for all sections */
+section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Slight rounding for professional look */
+    padding: 20px;
+    background-color: #fff; /* White background to contrast shadows */
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: auto; /* Sticky footer */
+    padding: 20px 0;
+    width: 100%;
+}
+
+
 /* Footer Styles */
 .footer {
     background-color: #131a48; /* Darker background for the footer */
@@ -513,3 +532,106 @@ body {
         width: 100px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Section Styling */
+.section-title {
+    font-size: 2.5rem;
+    color: #2C3E50; /* Darker shade for titles */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #2C3E50;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #f2f2f2, #e6e6e6); /* Soft gradient */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.function-card .icon, .responsibility-card .icon {
+    font-size: 2rem; /* Larger icons for better visual appeal */
+    color: #E67E22; /* Warm accent color */
+    margin-right: 15px;
+}
+
+.function-card p, .responsibility-card p {
+    font-size: 1.1rem;
+    color: #555555; /* Softer text color for better readability */
+    line-height: 1.8;
+}
+
+.function-card:hover .icon, .responsibility-card:hover .icon {
+    color: #D35400; /* Darker tone of accent color on hover */
+}
+
+/* Mission and Vision Section */
+.mission-vision-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.mission-vision-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.mission-vision-card h3 {
+    font-size: 2rem;
+    color: #34495E; /* Darker shade for headings */
+    margin-bottom: 15px;
+}
+
+.mission-vision-card p {
+    font-size: 1.1rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+.mission-vision-card .icon {
+    font-size: 3rem;
+    color: #E67E22;
+    margin-bottom: 20px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    .mission-vision-card {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
