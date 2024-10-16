@@ -121,55 +121,51 @@ body {
 }
 
 
-.announcement-bar {
-    width: 100%;
-    background-color: #ffffff;
-    color: #ff1717;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 50px;
-}
-
-.announcement-text {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: moveHorizontal 10s linear infinite;
-}
-
-@keyframes moveHorizontal {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
+ 
 
 
 .announcement-bar {
     width: 100%;
-    background-color: #FFCC33;
-    color: #1E3A5F;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #eaf7ff; /* Light blue background */
+    color: #003366; /* Dark blue text color for better contrast */
+    font-family: 'Montserrat', sans-serif; /* Font style */
+    font-size: 1rem; /* Font size */
+    font-weight: 600; /* Bold text */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Vertical padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow effect for depth */
+    height: 50px; /* Fixed height */
 }
 
 .announcement-text {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: moveHorizontal 10s linear infinite;
+    display: inline-block; /* Inline block for scrolling */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    animation: moveHorizontal 10s linear infinite; /* Animation for scrolling */
+    font-size: 1.1rem; /* Slightly larger font size for emphasis */
+}
+
+.announcement-text a {
+    color: #0056b3; /* Blue color for the link */
+    text-decoration: underline; /* Underline for emphasis */
+    margin-left: 5px; /* Spacing between text and link */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.announcement-text a:hover {
+    color: #003d7a; /* Darker blue on hover */
 }
 
 @keyframes moveHorizontal {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(100%); /* Start from right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to left */
+    }
 }
+
+
 
 /* About Section */
 .about-section {
