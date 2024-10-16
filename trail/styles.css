@@ -4,7 +4,11 @@ body {
 }
 
 h1, h2 {
-    color: #003366; /* Dark blue for headers */
+    color: #105eac; /* Dark blue for headers */
+}
+
+.navbar{
+    background-color: #DC3545;
 }
 
 .text-center {
@@ -15,6 +19,128 @@ ul.list-group {
     margin: 0 auto;
     max-width: 600px;
 }
+
+/* General Header Section Styling */
+.header-section {
+    background-color: #1E3A5F; /* Deep navy blue for professional contrast */
+    color: #FFCC33; /* Golden text */
+    font-family: 'Montserrat', sans-serif; /* Modern, professional font */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds depth */
+    border-radius: 0 0 10px 10px; /* Rounded bottom for a refined look */
+    padding: 20px 0;
+}
+
+/* Flex container for logo and text */
+.header-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    padding: 10px 20px;
+}
+
+/* Left and Right Logos Styling */
+.header-section .logo-left, .header-section .logo-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-section .logo {
+    max-height: 100px; /* Consistent logo size for desktop */
+    width: auto;
+    border: 2px solid #FFCC33; /* Gold border around logos */
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for logos */
+    margin: 0 10px; /* Equal margin for consistent spacing */
+}
+
+/* Center Text Styling */
+.header-section .header-text {
+    flex: 2;
+    text-align: center;
+    margin: 0 20px;
+}
+
+/* College Name - Enhanced Styling */
+.header-section .college-name {
+    font-size: 2rem; /* Good size for both desktop and larger mobile devices */
+    font-weight: 600;
+    background: linear-gradient(90deg, #FFCC33 0%, #FFF4CC 100%); /* Subtle golden gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes gradient text fill */
+    margin: 0;
+}
+
+/* Tagline Styling */
+.header-section .tagline {
+    font-size: 1rem; /* Base size for readability across devices */
+    font-weight: 300;
+    color: #FFFFFF; /* White for tagline contrast */
+    margin-top: 5px;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-section .container {
+        flex-direction: column; /* Stack logos and text vertically */
+        text-align: center; /* Center-align text and logos on mobile */
+    }
+
+    .header-section .logo {
+        max-height: 80px; /* Smaller logo size for mobile */
+    }
+
+    .header-section .college-name {
+        font-size: 1.7rem; /* Slightly smaller font for mobile readability */
+    }
+
+    .header-section .tagline {
+        font-size: 0.9rem; /* Adjust tagline size for mobile */
+    }
+}
+
+
+
+/* Announcement Block Styling */
+.announcement-bar {
+    width: 100%;
+    background-color: #FFCC33; /* Bright color to grab attention */
+    color: #1E3A5F; /* Dark navy color for contrast */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Moving Text Styling */
+.announcement-text {
+    display: inline-block; /* Keeps the text as a block */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides any overflow */
+    animation: moveHorizontal 10s linear infinite; /* Call the animation */
+}
+
+/* Keyframes for moving the text horizontally */
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left */
+    }
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .announcement-bar {
+        font-size: 0.9rem; /* Slightly smaller text for mobile */
+    }
+}
+
+
 
 /* Adding a light shadow and subtle border for all sections */
 section {
@@ -32,30 +158,9 @@ footer {
     width: 100%;
 }
 
-.hero {
-    background-image: url('https://source.unsplash.com/1600x900/?education,quality');
-    background-size: cover;
-    color: #fff;
-    position: relative;
-    padding: 100px 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for focus */
-    border-radius: 0 0 10px 10px; /* Rounded bottom edges */
-}
+ 
 
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
 
-.hero h1, .hero p, .hero .btn {
-    position: relative;
-    z-index: 2;
-}
 
 .btn-primary {
     background-color: #007bff;
@@ -76,15 +181,7 @@ footer {
     border-radius: 8px; /* Rounded image edges */
 }
 
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    .hero p {
-        font-size: 1rem;
-    }
-}
-
+ 
  
 
 /* Functions and Responsibilities Section */
