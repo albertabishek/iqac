@@ -537,15 +537,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 /* General Section Styling */
 .section-title {
     font-size: 2.5rem;
@@ -632,6 +623,258 @@ body {
     .mission-vision-card {
         padding: 20px;
         max-width: 100%;
+    }
+}
+
+
+
+
+/* General Section Styling */
+.section-title {
+    font-size: 2.4rem;
+    color: #2C3E50;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #2C3E50;
+    padding-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #7F8C8D;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Mission & Vision Cards */
+.mission-card, .vision-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover, .vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mission-title, .vision-title {
+    font-size: 1.5rem;
+    color: #1A3C40;
+    margin-bottom: 20px;
+}
+
+.mission-card p, .vision-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Report Card Styling */
+.report-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+}
+
+.report-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.report-card h5 {
+    font-size: 1.35rem;
+    color: #2C3E50;
+    margin-bottom: 15px;
+}
+
+.report-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn-custom {
+    background-color: #1A3C40;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #10292B;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .report-card, .mission-card, .vision-card {
+        padding: 20px;
+    }
+    .report-card h5, .mission-title, .vision-title {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+
+
+/* Feedback Section */
+ 
+
+#feedback {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    border-top: 2px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.4rem;
+    color: #34495E; /* Dark Blue-Gray */
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #34495E;
+    padding-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #7F8C8D; /* Gray */
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Star Rating */
+.star-rating {
+    color: #bdc3c7;
+    font-size: 2rem;
+}
+
+.star-rating i:hover,
+.star-rating i.active {
+    color: #f39c12; /* Gold for active stars */
+    cursor: pointer;
+}
+
+/* Form Styling */
+.form-group label {
+    font-weight: 600;
+    color: #34495E; /* Dark Blue-Gray */
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+#feedbackInput, #feedbackCategory {
+    border-radius: 8px;
+    border: 1px solid #BDC3C7; /* Light Gray */
+    padding: 15px;
+    font-size: 1rem;
+    color: #34495E; /* Dark Blue-Gray */
+    background-color: #ffffff; /* White */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#feedbackInput:focus, #feedbackCategory:focus {
+    border-color: #2980B9; /* Bright Blue */
+    box-shadow: 0 6px 12px rgba(41, 128, 185, 0.2);
+}
+
+
+#feedbackCategory {
+    border-radius: 8px;
+    border: 1px solid #BDC3C7; /* Light Gray */
+    padding: 10px 12px; /* Reduce padding to avoid text clipping */
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.5; /* Line height for better text alignment */
+    height: auto; /* Ensure height adjusts based on content */
+    color: #34495E; /* Dark Blue-Gray */
+    background-color: #ffffff; /* White background */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#feedbackCategory:focus {
+    border-color: #2980B9; /* Bright Blue */
+    box-shadow: 0 6px 12px rgba(41, 128, 185, 0.2); /* Blue shadow on focus */
+}
+
+
+/* Button Styling */
+.btn-custom {
+    background-color: #2980B9; /* Bright Blue */
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #1A5276; /* Darker Blue */
+    box-shadow: 0 6px 15px rgba(26, 82, 118, 0.4);
+}
+
+/* Modal Styling */
+.modal-content {
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #34495E;
+}
+
+.modal-footer .btn {
+    background-color: #2980B9;
+    color: white;
+    border: none;
+}
+
+.modal-footer .btn:hover {
+    background-color: #1A5276;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #feedback {
+        padding: 30px 0;
+    }
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    .btn-custom {
+        padding: 10px 25px;
+        font-size: 1rem;
     }
 }
 
