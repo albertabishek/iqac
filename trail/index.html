@@ -10,10 +10,9 @@
 
 </head>
 <body>
-    
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
         <a class="navbar-brand" href="#">IQAC College</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,16 +30,36 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero bg-info text-white text-center py-5">
-        <div class="overlay"></div>
-        <h1>Welcome to IQAC</h1>
-        <p>Ensuring Quality Education and Continuous Improvement</p>
-        <a href="#about" class="btn btn-light mt-3">Learn More</a>
-    </header>
 
-    
- <!-- About Section -->
+<!-- Header Section with Logos and Text -->
+<header class="header-section py-4">
+    <div class="container d-flex align-items-center justify-content-between">
+        <!-- Left Logo (TPGIT) -->
+        <div class="logo-left">
+            <img src="images/tpgit logo.png" alt="TPGIT Logo" class="logo rounded-circle">
+        </div>
+        
+        <!-- Center Text (College Name and Additional Text) -->
+        <div class="header-text text-center">
+            <h1 class="college-name">Thanthai Periyar Government Institute of Technology</h1>
+            <p class="tagline">Prosperity through Technology | Internal Quality Assurance Cell</p>
+        </div>
+        
+        <!-- Right Logo (IQAC) -->
+        <div class="logo-right">
+            <img src="images/iqac logo.jpg" alt="IQAC Logo" class="logo rounded-circle">
+        </div>
+    </div>
+</header>
+
+<!-- Announcement Block -->
+<div class="announcement-bar">
+    <div class="announcement-text">
+        <p>📢 Important: Admissions open for the new academic year! Apply now!</p>
+    </div>
+</div>
+
+<!-- About Section -->
 <section id="about" class="py-5 bg-light about-section">
     <div class="container">
         <h2 class="text-center mb-4">Welcome to IQAC</h2>
@@ -61,6 +80,8 @@
         </div>
     </div>
 </section>
+
+
 
 
 
@@ -122,7 +143,7 @@
                 <div class="card text-center shadow-sm member-card">
                     <img src="images/image5.jpeg" alt="Mr. Alex Johnson" class="card-img-top rounded-circle mx-auto mt-3">
                     <div class="card-body d-flex flex-column align-items-center">
-                        <h5 class="card-title">Mr. James</h5>
+                        <h5 class="card-title">Mr. Alex Johnson</h5>
                         <p class="card-text text-muted">Student Nominee</p>
                         <hr class="w-50">
                         <p class="card-text description">Bringing the student voice into the heart of quality assurance discussions.</p>
@@ -134,7 +155,7 @@
                 <div class="card text-center shadow-sm member-card">
                     <img src="images/image6.jpeg" alt="Ms. Emily Davis" class="card-img-top rounded-circle mx-auto mt-3">
                     <div class="card-body d-flex flex-column align-items-center">
-                        <h5 class="card-title">Ms. Ananya</h5>
+                        <h5 class="card-title">Ms. Emily Davis</h5>
                         <p class="card-text text-muted">External Stakeholder</p>
                         <hr class="w-50">
                         <p class="card-text description">Providing an external perspective and guidance to the IQAC team.</p>
@@ -329,7 +350,7 @@
                 <h5>Contact Us</h5>
                 <p>Email: <a href="mailto:iqac@college.edu" class="text-white">iqac@college.edu</a></p>
                 <p>Phone: <a href="tel:+1234567890" class="text-white">+123-456-7890</a></p>
-                <p>Address: Thanthai Periyar Govt institute of technology - vellore, Tamilnadu </p>
+                <p>Address: 123 College Lane, City, Country</p>
             </div>
 
             <!-- Social Media Links -->
@@ -381,41 +402,5 @@
             });
         });
     </script>
-
-    <script>
-window.addEventListener('mouseover', initLandbot, { once: true });
-window.addEventListener('touchstart', initLandbot, { once: true });
-var myLandbot;
-function initLandbot() {
-  if (!myLandbot) {
-    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-    s.addEventListener('load', function() {
-      var myLandbot = new Landbot.Livechat({
-        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2641809-QP0GNTWZ95AGCM9W/index.json',
-      });
-    });
-    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  }
-}
-   <script>
-window.addEventListener('mouseover', initLandbot, { once: true });
-window.addEventListener('touchstart', initLandbot, { once: true });
-var myLandbot;
-function initLandbot() {
-  if (!myLandbot) {
-    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-    s.addEventListener('load', function() {
-      var myLandbot = new Landbot.Livechat({
-        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2641809-QP0GNTWZ95AGCM9W/index.json',
-      });
-    });
-    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  }
-}
-</script>
 </body>
 </html>
