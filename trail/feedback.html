@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About IQAC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        <a class="navbar-brand" href="#">TPGIT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/about.html/">About IQAC</a></li>
+                <li class="nav-item"><a class="nav-link" href="#members">Composition</a></li>
+                <li class="nav-item"><a class="nav-link" href="#functions">Functions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reports">Annual Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 section-title">We Value Your Feedback!</h2>
+            <p class="text-center mb-5 section-subtitle">Your insights help us improve your learning experience. Please share your thoughts!</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="feedbackForm">
+                        <!-- Rating System -->
+                        <div class="form-group text-center">
+                            <label for="ratingStars">Rate Your Experience</label>
+                            <div id="ratingStars" class="star-rating">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </div>
+                        </div>
+
+                        <!-- Category Selection -->
+                        <div class="form-group">
+                            <label for="feedbackCategory">Select Feedback Category</label>
+                            <select class="form-control" id="feedbackCategory" required>
+                                <option value="" selected >Select a Category</option>
+                                <option value="courses">Courses</option>
+                                <option value="facilities">Facilities</option>
+                                <option value="support">Support Services</option>
+                            </select>
+                        </div>
+
+                        <!-- Feedback Text Area -->
+                        <div class="form-group">
+                            <label for="feedbackInput">Your Feedback</label>
+                            <textarea class="form-control" id="feedbackInput" rows="5" placeholder="What are your thoughts?" required></textarea>
+                        </div>
+
+                        <!-- Anonymous Checkbox -->
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="anonymousCheck">
+                            <label class="form-check-label" for="anonymousCheck">Submit Anonymously</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom">Submit Feedback</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Confirmation Modal -->
+        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="feedbackModalLabel">Thank You!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        We appreciate your feedback. It helps us improve our services.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+ 
+
+    
+
+
+
+
+ 
+
+<!-- Footer with Contact Section -->
+<footer class="footer  text-white py-5">
+    <div class="container">
+        <!-- Footer Contact Section -->
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <h5>Contact Us</h5>
+                <p>Email: <a href="mailto:iqac@college.edu" class="text-white">iqac@college.edu</a></p>
+                <p>Phone: <a href="tel:+1234567890" class="text-white">+123-456-7890</a></p>
+                <p>Address: 123 College Lane, City, Country</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-md-4 text-center mb-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 text-center mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about" class="text-white">About IQAC</a></li>
+                    <li><a href="#reports" class="text-white">Annual Reports</a></li>
+                    <li><a href="#feedback" class="text-white">Feedback</a></li>
+                    <li><a href="#contact" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr class="my-4" style="border-color: #444;">
+
+        <!-- Copyright Section -->
+        <div class="text-center mt-4">
+            <p>&copy; 2024 IQAC College. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     
+    
+        <script>
+            document.querySelector('.navbar-toggler').addEventListener('click', function () {
+                this.classList.toggle('collapsed');
+                var navItems = document.querySelector('.navbar-nav');
+                navItems.classList.toggle('show');
+            });
+    
+            // Smooth scroll for navbar links
+            document.querySelectorAll('a.nav-link').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+
+
+            // Star Rating System
+const stars = document.querySelectorAll('.star-rating i');
+stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+        stars.forEach((s, i) => {
+            if (i <= index) {
+                s.classList.add('active');
+            } else {
+                s.classList.remove('active');
+            }
+        });
+    });
+});
+
+// Form Submission Handling (with modal)
+document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent page refresh on submit
+
+    // Show modal on submit
+    $('#feedbackModal').modal('show');
+});
+
+        </script>
+
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/10/16/09/20241016092717-09FPUE5Q.js"></script>
+</body>
+</html>
