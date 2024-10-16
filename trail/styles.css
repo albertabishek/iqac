@@ -321,3 +321,195 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+
+
+
+
+/* Members Section Styling */
+.members-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 0;
+    position: relative;
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.section-title span {
+    background: linear-gradient(90deg, #6c757d, #5a6268);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glow Animation */
+@keyframes glow {
+    from { text-shadow: 0 0 10px rgba(108, 117, 125, 0.6); }
+    to { text-shadow: 0 0 20px rgba(90, 98, 104, 0.8); }
+}
+
+/* Card Styling */
+.member-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background-color: #fff;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+ 
+/* Card Image Styling */
+#members .card-img-top {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ddd;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Image shadow */
+    transition: all 0.3s ease;
+}
+
+#members .card:hover .card-img-top {
+    transform: scale(1.05); /* Image scaling on hover */
+}
+
+/* Card Title */
+.member-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.member-card:hover .card-title {
+    color: #1e272e;
+}
+
+/* Card Description */
+.member-card .description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Horizontal Rule */
+.member-card hr {
+    width: 50%;
+    border-top: 2px solid #6c757d;
+    margin: 15px 0;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .member-card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+/* Section Title Styling */
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #4a4a4a; /* Light slate gray for a clean, professional look */
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
+    display: inline-block;
+    width: 100%; /* Ensures full centering */
+}
+
+/* Subtle Shadow for Depth */
+.section-title span {
+    display: inline-block;
+    color: #4a4a4a; /* Consistent single color */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: relative;
+    animation: textGlow 2s infinite alternate;
+}
+
+/* Glow Animation (Light) */
+@keyframes textGlow {
+    from {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    to {
+        text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Decorative Underline */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: #4a4a4a; /* Single color underline */
+    margin: 10px auto 0;
+    border-radius: 8px;
+    animation: growLine 1s ease-out;
+}
+
+/* Underline Animation */
+@keyframes growLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+/* Fade-In Entry Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.4rem;
+    }
+    .section-title::after {
+        width: 100px;
+    }
+}
