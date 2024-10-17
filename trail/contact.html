@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        <a class="navbar-brand" href="#">TPGIT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="about.html" >About</a></li>
+                <li class="nav-item"><a class="nav-link" href="composition.html">composition</a></li>
+                <li class="nav-item"><a class="nav-link" href="functions.html">Functions</a></li>
+                <li class="nav-item"><a class="nav-link" href="reports.html">Annual Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+ 
+    
+    
+    
+    
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <p class="text-center mb-5">Get in touch with our Internal Quality Assurance Cell (IQAC) team. We are here to help you with any questions or feedback.</p>
+    
+                <div class="row">
+                    <!-- Contact Information -->
+                    <div class="col-md-6 mb-4">
+                        <div class="contact-info">
+                            <h5>Contact Information</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Address:</strong> THANTHAI PERIYAR GOVERNMENT INSTITUTE OF TECHNOLOGY, Chitteri Road, Bagayam, Vellore 632002, Tamilnadu.</li>
+                                <li><strong>Phone:</strong> +123-456-7890</li>
+                                <li><strong>Email:</strong> iqac@tpgit.edu.in</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <!-- Contact Form -->
+                    <div class="col-md-6 mb-4">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+         
+
+
+ 
+
+<!-- Footer with Contact Section -->
+<footer class="footer  text-white py-5">
+    <div class="container">
+        <!-- Footer Contact Section -->
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <h5>Contact Us</h5>
+                <p>Email: <a href="mailto:iqac@college.edu" class="text-white">iqac@tpgit.edu.in</a></p>
+                <p>Phone: <a href="tel:+1234567890" class="text-white">+123-456-7890</a></p>
+                <p>Address: THANTHAI PERIYAR GOVERNMENT INSTITUTE OF TECHNOLOGY, Chitteri Road, Bagayam, Vellore 632002, Tamilnadu.</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-md-4 text-center mb-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 text-center mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="about.html" class="text-white">About IQAC</a></li>
+                    <li><a href="reports.html" class="text-white">Annual Reports</a></li>
+                    <li><a href="feedback.html" class="text-white">Feedback</a></li>
+                    <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr class="my-4" style="border-color: #444;">
+
+        <!-- Copyright Section -->
+        <div class="text-center mt-4">
+            <p>&copy; 2024 IQAC College. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <script>
+            document.querySelector('.navbar-toggler').addEventListener('click', function () {
+                this.classList.toggle('collapsed');
+                var navItems = document.querySelector('.navbar-nav');
+                navItems.classList.toggle('show');
+            });
+    
+            
+        </script>
+
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/10/16/09/20241016092717-09FPUE5Q.js"></script>
+</body>
+</html>
